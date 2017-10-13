@@ -1,0 +1,257 @@
+October 14, 2017 
+ABOUT
+CONTACT
+ADVERTISE
+
+https://www.gohacking.com/create-computer-virus/
+//^to disect
+https://www.gohacking.com/compile-c-programs/
+
+
+GoHacking
+Tips and Hacks to Get Things Done
+HOME
+CELL PHONE HACKS
+HOW-TO GUIDES
+INTERNET SECURITY
+CRYPTO AND CODING
+How to Compile C Programs
+
+ By: Srikanth Ramesh |  Last Updated: 06/01/2017
+In many of my previous posts especially in the Programming section, I have used C as the programming language for writing the programs. If you’re new to C programming and find it difficult to compile the C source codes then this post is for you.
+Here is a step-by-step procedure to install Borland C++ compiler 5.5 on your PC and compile the C programs.
+How to Install Borland C++ compiler?
+Follow the below steps to install Borland C++ compiler 5.5 on your PC:
+Download Borland C++ compiler 5.5 (for Windows platform) from the following link:
+
+Download Borland C++ 5.5
+After you download, run the file C++5.51.exe. The default installation path would be:
+
+C:\Borland\BCC55
+How to configure Borland C++ compiler?
+Here is a step-by-step instruction on how to configure the compiler:
+After you install Borland C++ compier, create two new Text Documents.
+Open the first New Text Document.txt file and add the following two lines into it:
+
+-I"c:\Borland\Bcc55\include"
+
+
+-L"c:\Borland\Bcc55\lib"
+
+
+Save changes and close the file. Now rename the file from New Text Document.txt to bcc32.cfg.
+Open the second New Text Document (2).txt file and add the following line into it:
+
+-L"c:\Borland\Bcc55\lib"
+
+Save changes and close the file. Rename the file from New Text Document (2).txt to ilink32.cfg.
+Now copy the two files bcc32.cfg and ilink32.cfg, navigate to C:\Borland\BCC55\Bin and paste them.
+How to Compile the C Source Code (.C files)?
+Here is a detailed instruction on how to compile C source codes:
+You need to place the .C (example.c) file to be compiled in the following location:
+
+C:\Borland\BCC55\Bin
+Now go to the command prompt (Start->Run->type cmd->Enter)
+Make the following path as the present working directory (use the CD command):
+
+C:\Borland\BCC55\Bin
+To compile the file (example.c) use the following command:
+
+bcc32 example.c
+Now if there exists no error in the source code, you’ll get a compiled executable module (example.exe) in the same location (C:\Borland\BCC55\Bin).
+Now you have successfully compiled the source code into an executable file(.exe file).
+
+NOTE: The above tutorial assumes that you’ve installed the compiler onto the C: drive (by default).
+RECOMMENDED POSTS FOR YOU
+
+A Virus Program to Disable USB Ports
+
+A Virus Program to Restart the Computer
+
+How to Create a Computer Virus?
+
+Share
+30
+
+Tweet
+
++1
+
+Share
+
+Comments
+rexter says 
+July 18, 2009 at 11:58 PM
+thank u very much…
+sumit says 
+July 19, 2009 at 6:21 PM
+Hey man,
+I tried every thing, but it gives the error “unable to open include file ‘stdio.h’ ” also for all header files
+Srikanth says 
+July 19, 2009 at 7:28 PM
+@ sumit
+Reinstall your C compiler and configure it properly.
+FoXriDeR says 
+July 25, 2009 at 8:14 PM
+hey great job btw but when i run>cmd and i type C:\Borland\BCC55\Bin is says that it is not an internal/external command.. please help!!
+Srikanth says 
+July 26, 2009 at 8:22 PM
+@ FoXriDeR
+Type “cd\” ENTER
+then type “cd C:\Borland\BCC55\Bin” ENTER
+This should work!
+FoXriDeR says 
+July 25, 2009 at 8:18 PM
+i sort of get lost after how to configure it
+Anurag Trehan says 
+July 25, 2009 at 9:06 PM
+hey srikant I am not able to compile files as it giving me so many errors during my compiling it So please help me….
+Rameez Rehman says 
+July 29, 2009 at 9:33 AM
+Great job………….
+ojas says 
+July 30, 2009 at 1:00 AM
+thanks bro , i hav made it , everyone that shows error use cd command b4 it and it will work.
+but i havnt tried it yet im too sacred its my sisters laptop anything happens and im dead lolz
+thankz
+Ojas
+a.j says 
+July 31, 2009 at 7:19 PM
+hey srikanth..i have turbo c++ compiler..can i compile this file using it??
+Srikanth says 
+August 6, 2009 at 10:20 PM
+@ a.j
+Yes you can compile.. but it’ll be 16-bit… You need to compile it using a 32-bit to change it’s icon…
+BAPPA says 
+August 3, 2009 at 11:33 PM
+i got a error massage about the stdio header file.
+warning-unable to open include file “stdio.h”
+-L”c:\Borland\Bcc55\lib”
+should i have to write the whole line.
+plzzzzz help me.
+sanjay singhania says 
+August 5, 2009 at 7:02 PM
+hi skikant.
+my frend has got new broadband connection.and all the time he ask me
+that is anyone hacking my computer?? how can i know that.
+i replied him that i dont know.
+so atlast i want to ask you that can you tell me how can my friend
+know that someone hacking my friends broadband connection or not
+Fawkes says 
+August 6, 2009 at 3:55 AM
+What’s the .c file? I get lost at the part where it tells us to move the .c file to C:\Borland\BCC55\Bin
+CrasOveride says 
+September 8, 2009 at 4:19 AM
+nicely done!
+keep it up
+Ritika Sharma says 
+September 19, 2009 at 2:03 AM
+Hey Shrikant,
+I have created a program (using C language)in which I have listed Tables with the help of loops.Can I save this table in *.txt format?
+Thanks in advance.Hope I’ll get some help.
+Bill says 
+September 21, 2009 at 5:53 AM
+Hi. I tried compiling the codes for the usb virus in the cmd promp it said unable to open include file stdio.h. I even tried reinstalling borland and reconfigure it and it still said the same thing and i configured it right because i did exactly what you said. Please help.
+ghost says 
+September 22, 2009 at 10:30 AM
+Tried to download borland c++ complier but ended up with no downloads available. Any tips from which I can download in an alternative wedsite? 
+ 
+
+vipan says 
+October 14, 2009 at 11:17 AM
+i m not able to install any of turbo c compiler on my pc and can i run block_usb.c on unix putty in hostel.if yes what steps i hav to follow to do this
+Srikanth says 
+October 15, 2009 at 6:05 PM
+@ vipan
+No the block_usb.c has been coded for windows PC and not for UNIX.
+yd15 says 
+October 15, 2009 at 9:44 AM
+Why can’t my files be opened on the Borland Compiler I’ve configured it right as far as I know Ive done it about 7 times…. and still get errors.
+jayan says 
+December 5, 2009 at 3:36 PM
+thank you….very..very..very…much..can you suggest me any tutorial or books..so i can advance in creating trojans
+Aman says 
+December 8, 2009 at 11:10 AM
+Can we run this code in turbo c also or do I have to make some changes to do so and also I would like to know if we can compile and run the code using Ctrl+F9
+pasil d'souza says 
+December 14, 2009 at 5:03 PM
+hey srikant. can u mail me an easy way to create a trojan. i find it hard to make by using c++ way……..
+ravi says 
+December 14, 2009 at 5:48 PM
+You are genius.I am also a computer expert but I wish if i could become like you.May be in next birth…
+Dennis S says 
+December 15, 2009 at 9:06 AM
+very confused…plz break it down into little baby steps for a vista user plzzzzz
+DSAdsa says 
+December 29, 2009 at 2:56 AM
+i get a .obj file please help!!
+Jason says 
+January 6, 2010 at 4:37 PM
+Hi Srikanth Keep up the good work.I really like what you are doing could you teach me.Im really interested.i know some basics oc C as we have programs in C in our college.
+Richard says 
+January 13, 2010 at 10:41 AM
+Hi Srikanth,
+I get to the point where you enter the command promt command to compile the file. Whenever I enter “bcc32 example.c” It says that there were 18 errors in compile. And thanks for putting, so much awesome stuff up on the site.
+fametail says 
+January 30, 2010 at 1:37 AM
+yes, I have the same issue as Richard. I am honestly sure I have contacted you on this B4. I am trying to compile the trojan horse using these instructions.
+Srikanth says 
+February 12, 2010 at 2:05 PM
+For all those who are having difficulty in compiling the programs
+It is highly recommended that you have atleast a surface level knowledge of C language and know how to work with C Compilers. Otherwise it would be hard to debug the errors. So I am sorry for all those who have problems in compiling. It’s hard for me to answer each and everyone’s queries.
+
+33,355
+Subscribers
+
+24,210
+Fans
+
+957
+Followers
+
+1,549
+In Circles
+Get Free Updates 
+Get Weekly Updates delivered directly to your Mailbox from GoHacking!
+SUBSCRIBE NOW
+Categories
+CELL PHONE HACKS 
+15
+CRYPTO AND CODING 
+13
+HACKING BASICS 
+11
+HOW STUFF WORKS 
+9
+HOW-TO GUIDES 
+55
+INTERNET SECURITY 
+34
+REVIEWS AND OFFERS 
+5
+WEB HACKING 
+16
+WEB HOSTING 
+1
+WINDOWS HACKS 
+25
+Popular Posts
+How to Hack WhatsApp Account
+Spy on Text Messages: Complete Guide
+How to Track a Cell Phone
+Learn How to Hack – Hacking Simplified
+Get Free Updates 
+Get Weekly Updates delivered directly to your Mailbox from GoHacking!
+SUBSCRIBE NOW
+About  |  Contact  |  Disclaimer  |  Privacy Policy  |  Sitemap  |  Scroll to Top
+Copyright © 2009-2017 GoHacking.com. All Rights Reserved.
+
+Share
+30
+
+Tweet
+
++1
+
+Share
+
